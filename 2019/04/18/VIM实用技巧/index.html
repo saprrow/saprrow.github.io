@@ -1,100 +1,50 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang>
-<head><meta name="generator" content="Hexo 3.8.0">
+<html lang="">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="Blog && ZJW" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="/css/main.css?v=7.1.0">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
+<script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    version: '7.1.0',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
-    back2top: true,
-    back2top_sidebar: false,
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
-    fastclick: false,
+    mediumzoom: false,
     lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    pangu: false,
     algolia: {
-      applicationID: '',
+      appID: '',
       apiKey: '',
       indexName: '',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
   };
 </script>
-
-
-  
-
-
-
 
   <meta name="description" content="新手之坑用了VIM，你以后再也不用鼠标了！很多人都因为这句话开始学习VIM,然而最终很多人经历的都是VIM从入门到放弃，2333。VIM的学习曲线非常陡峭，初学会感到很困难，甚至觉得这个编辑器一点都不好用，但是当你投入一段时间后，就会体会到VIM的精妙之处。学成之后更是威力无穷。 对于VIM这款编辑器最好的学习方式，就是每天学一点，不出两个月，就能成为一个合格的VIMER了。">
 <meta name="keywords" content="编辑器">
@@ -105,25 +55,23 @@
 <meta property="og:description" content="新手之坑用了VIM，你以后再也不用鼠标了！很多人都因为这句话开始学习VIM,然而最终很多人经历的都是VIM从入门到放弃，2333。VIM的学习曲线非常陡峭，初学会感到很困难，甚至觉得这个编辑器一点都不好用，但是当你投入一段时间后，就会体会到VIM的精妙之处。学成之后更是威力无穷。 对于VIM这款编辑器最好的学习方式，就是每天学一点，不出两个月，就能成为一个合格的VIMER了。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/img/vim.png">
-<meta property="og:updated_time" content="2019-05-07T03:45:22.998Z">
+<meta property="og:updated_time" content="2019-11-06T11:51:37.818Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VIM实用技巧">
 <meta name="twitter:description" content="新手之坑用了VIM，你以后再也不用鼠标了！很多人都因为这句话开始学习VIM,然而最终很多人经历的都是VIM从入门到放弃，2333。VIM的学习曲线非常陡峭，初学会感到很困难，甚至觉得这个编辑器一点都不好用，但是当你投入一段时间后，就会体会到VIM的精妙之处。学成之后更是威力无穷。 对于VIM这款编辑器最好的学习方式，就是每天学一点，不出两个月，就能成为一个合格的VIMER了。">
 <meta name="twitter:image" content="http://yoursite.com/img/vim.png">
 
+<link rel="canonical" href="http://yoursite.com/2019/04/18/VIM实用技巧/">
 
 
-
-
-  
-  
-  <link rel="canonical" href="http://yoursite.com/2019/04/18/VIM实用技巧/">
-
-
-
-<script id="page.configurations">
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
   };
 </script>
 
@@ -135,15 +83,8 @@
 
 
 
-
-
-
-
-
-
   <noscript>
   <style>
-  .use-motion .motion-element,
   .use-motion .brand,
   .use-motion .menu-item,
   .sidebar-inner,
@@ -152,9 +93,8 @@
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
+  .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .logo,
   .use-motion .site-title,
   .use-motion .site-subtitle {
     opacity: initial;
@@ -168,273 +108,132 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
   <div class="site-meta">
-    
 
-    <div class="custom-logo-site-title">
+    <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Blog && ZJW</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-    
-    
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
 </div>
-
 
 
 <nav class="site-nav">
   
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
+        <li class="menu-item menu-item-categories">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
+        <li class="menu-item menu-item-commonweal">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+    <a href="/404/" rel="section"><i class="fa fa-fw fa-heartbeat"></i>Commonweal 404</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-schedule">
+  </ul>
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>Schedule</a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-
-  
 </nav>
-
-
-
-  
-
-
-
 </div>
     </header>
 
     
-  
-  
-
-  
-
-  <a href="https://github.com/saprrow" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
 
-
-    <main id="main" class="main">
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
           
+
+          <div class="content">
             
 
-          
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-
+  <div class="posts-expand">
+      
   
   
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="default">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/VIM实用技巧/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/tusiji.jpg">
       <meta itemprop="name" content="ZJW">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/t2.png">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Blog && ZJW">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">VIM实用技巧
-
-              
-            
-          </h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          VIM实用技巧
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
+              <span class="post-meta-item-text">Posted on</span>
 
               <time title="Created: 2019-04-18 13:47:39" itemprop="dateCreated datePublished" datetime="2019-04-18T13:47:39+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
+            </span>
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-07 11:45:22" itemprop="dateModified" datetime="2019-05-07T11:45:22+08:00">2019-05-07</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-11-06 19:51:37" itemprop="dateModified" datetime="2019-11-06T19:51:37+08:00">2019-11-06</time>
+              </span>
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编辑器/" itemprop="url" rel="index"><span itemprop="name">编辑器</span></a></span>
-
-                
-                
-              
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/editor/" itemprop="url" rel="index">
+                    <span itemprop="name">editor</span>
+                  </a>
+                </span>
             </span>
-          
 
           
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
-    
 
     
     
@@ -442,13 +241,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
         <h2 id="新手之坑"><a href="#新手之坑" class="headerlink" title="新手之坑"></a>新手之坑</h2><p>用了VIM，你以后再也不用鼠标了！<br>很多人都因为这句话开始学习VIM,然而最终很多人经历的都是VIM从入门到放弃，2333。<br>VIM的学习曲线非常陡峭，初学会感到很困难，甚至觉得这个编辑器一点都不好用，但是当你投入一段时间后，就会体会到VIM的精妙之处。学成之后更是威力无穷。</p>
-<p>对于VIM这款编辑器最好的学习方式，就是每天学一点，不出两个月，就能成为一个合格的VIMER了。<br><a id="more"></a></p>
-<h5 id="各种文本编辑器学习曲线"><a href="#各种文本编辑器学习曲线" class="headerlink" title="各种文本编辑器学习曲线"></a>各种文本编辑器学习曲线</h5><p><img src="/img/vim.png" alt><br>看到VIM的学习曲线,我的妈,这不就是阶跃信号么,笑哭.<br>emacs的学习曲线也够奇葩,棒棒糖学习曲线.<br>注意,这张图不包括IDE.如果非要提ide的话,我最喜欢的是sublime text.</p>
-<h2 id="欲练此功-必先"><a href="#欲练此功-必先" class="headerlink" title="欲练此功,必先"></a>欲练此功,必先</h2><p>　　了解VIM常用的两种模式，普通模式和插入模式．与一般编辑器不同，当你用VIM打开一个文件时，进入的必然是普通模式．新手碰到这个模式时通常会一脸懵逼，各种按键盘都无法输入文本．其实只要按一下i就进入插入模式了,i的意思就是insert．此时就可以像一般编辑器一样开始码字、秀操作了．然后按ESC键就可以回到普通模式了．<br>　　如果我问一个问题，这两种模式那种用的更多？大多数人一定会不假思索地回答是插入模式．非也非也，其实大多数时间我们都是用的普通模式．＂普通＂模式，从名字上就能看出来，这是最普通的一种模式，也是我们最常用的模式．在这个模式下，理论上，我们只要通过ESC,i还有ＨＪＫＬ这六个键盘按键，完成任何代码的编写，完全不需要鼠标．只不过只用这六个键，我们的码字速度效率会比较低．因此要成为一名VIM高手，必须要学习其他按键的功能和VIM技巧．<br>    如果还不理解为什么普通模式是最常用模式的话,就把写代码想象成画画.画家大多数时间都是对着画布思考要怎么画,写代码也如此,程序员大部分时间也是在对着屏幕思考如何添加修改代码.当画家要下笔的时候,就会将画笔放到画布上,这就相当于我们在VIM中按了i,进入了插入模式.但当他结束这处作画时,就会移动画笔到别的地方去,这时画笔就不会贴在画布上了,这就相当于我们进入了VIM的普通模式．<br>ps:用习惯了hjkl后，进入很多其他编辑器后往往会一下子输入很多hjkl,2333．．．初学者可能不会习惯hjkl,而是用键盘上的方向键移动光标，但是我还是建议用hjkl，因为这是离你右手最近的键位，这种方法让你无需频繁地将手移动到方向键的位置上．</p>
+<p>对于VIM这款编辑器最好的学习方式，就是每天学一点，不出两个月，就能成为一个合格的VIMER了。<br><a id="more"></a><br>　　<em>各种文本编辑器学习曲线</em><br><img src="/img/vim.png" alt><br>看到VIM的学习曲线,我的妈,这不就是阶跃信号么,笑哭.<br>emacs的学习曲线也够奇葩,棒棒糖学习曲线.<br>注意,这张图不包括IDE.如果非要提ide的话,我最喜欢的是sublime text.</p>
+<h2 id="欲练此功-必先"><a href="#欲练此功-必先" class="headerlink" title="欲练此功,必先"></a>欲练此功,必先</h2><p>　　<strong>了解VIM常用的两种模式</strong>，普通模式和插入模式．与一般编辑器不同，当你用VIM打开一个文件时，进入的必然是普通模式．新手碰到这个模式时通常会一脸懵逼，各种按键盘都无法输入文本．其实只要按一下i就进入插入模式了,i的意思就是insert．此时就可以像一般编辑器一样开始码字、秀操作了．然后按ESC键就可以回到普通模式了．<br>　　如果我问一个问题，这两种模式那种用的更多？大多数人一定会不假思索地回答是插入模式．非也非也，其实大多数时间我们都是用的普通模式．＂普通＂模式，从名字上就能看出来，这是最普通的一种模式，也是我们最常用的模式．在这个模式下，理论上，我们只要通过ESC,i还有ＨＪＫＬ这六个键盘按键，完成任何代码的编写，完全不需要鼠标．只不过只用这六个键，我们的码字速度效率会比较低．因此要成为一名VIM高手，必须要学习其他按键的功能和VIM技巧.<br>　　如果还不理解为什么普通模式是最常用模式的话,就把写代码想象成画画.画家大多数时间都是对着画布思考要怎么画,写代码也如此,程序员大部分时间也是在对着屏幕思考如何添加修改代码.当画家要下笔的时候,就会将画笔放到画布上,这就相当于我们在VIM中按了i,进入了插入模式.但当他结束这处作画时,就会移动画笔到别的地方去,这时画笔就不会贴在画布上了,这就相当于我们进入了VIM的普通模式．<br>ps:用习惯了hjkl后，进入很多其他编辑器后往往会一下子输入很多hjkl,2333．．．初学者可能不会习惯hjkl,而是用键盘上的方向键移动光标，但是我还是建议用hjkl，因为这是离你右手最近的键位，这种方法让你无需频繁地将手移动到方向键的位置上．</p>
 <h3 id="按键总结"><a href="#按键总结" class="headerlink" title="按键总结"></a>按键总结</h3><table>
 <thead>
 <tr>
@@ -471,49 +266,43 @@
 </tr>
 </tbody>
 </table>
+<h2 id="如何优雅地从普通模式切换至插入模式"><a href="#如何优雅地从普通模式切换至插入模式" class="headerlink" title="如何优雅地从普通模式切换至插入模式"></a>如何优雅地从普通模式切换至插入模式</h2><p>　　当你能熟练地使用i切换到插入模式时，就应该学点其他的技巧了。这些技巧能让你更灵活地从普通模式切换至插入模式，提高输入效率。</p>
+<h3 id="让你放弃i的a"><a href="#让你放弃i的a" class="headerlink" title="让你放弃i的a"></a>让你放弃<code>i</code>的<code>a</code></h3><p>　　使用a能将光标后移一位然后再进入插入模式，比如当你在维护一段代码时，你发现了一个错误的变量名<code>wor</code>,它的末尾少了一个ｋ。这时你就可以使用好用的<code>hjkl</code>将光标移动至r处，然后按a键，直接输入k，再按ESC键返回普通模式就完事了。如果用i键的话，你得到的会是<code>wokr</code>,除非你将光标移动到<code>wor</code>后面那个“未知”的位置。</p>
+<h3 id="让你节省好几秒的A键（shift-a）"><a href="#让你节省好几秒的A键（shift-a）" class="headerlink" title="让你节省好几秒的Ａ键（shift + a）"></a>让你节省好几秒的Ａ键（shift + a）</h3><p>　　设想这样一个场景，你发现某一行代码的最后少了一个<code>;</code>，随后你将光标移到这行，然后一直按l键将光标移到这行最后，然后按a键，再输入<code>;</code>完成修改。一直按l键看着光标向右移动是很痛苦的，也许一次你会觉得很轻松舒适，但是百次呢，千次呢。我相信如果你在写代码的生涯中一直这样操作的话，你的输入体验应该不会很好。这时就需要Ａ键来拯救我们了。将光标移动至该行，然后按Ａ键，光标会移动至该行最后一个字符的后面并切换至插入模式，就是这么简单！<br>　　告诉你一个秘密　A = $ + a，可以在你的VIM上试一下，它们实现的功能百分之百一样，同时你会明白$键的功能。</p>
+<h3 id="流畅的o键"><a href="#流畅的o键" class="headerlink" title="流畅的o键"></a>流畅的o键</h3><p>　　当你想在两行代码之间输入一行代码时，可以直接按o键。　
+　</p>
 
-      
     </div>
 
     
-
-    
-    
-    
-
-    
-
-    
-      
     
     
 
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/编辑器/" rel="tag"># 编辑器</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2019/05/16/ubuntu科学上网/" rel="prev" title="ubuntu科学上网">
+                  ubuntu科学上网 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
     
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/编辑器/" rel="tag"># 编辑器</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
   </article>
-
+  
+  
+  
 
   </div>
 
@@ -521,174 +310,134 @@
           </div>
           
 
-  
-
-
-
         </div>
-        
           
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
-  <aside id="sidebar" class="sidebar">
+  <aside class="sidebar">
     <div class="sidebar-inner">
 
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
 
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#新手之坑"><span class="nav-number">1.</span> <span class="nav-text">新手之坑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#欲练此功-必先"><span class="nav-number">2.</span> <span class="nav-text">欲练此功,必先</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#按键总结"><span class="nav-number">2.1.</span> <span class="nav-text">按键总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何优雅地从普通模式切换至插入模式"><span class="nav-number">3.</span> <span class="nav-text">如何优雅地从普通模式切换至插入模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#让你放弃i的a"><span class="nav-number">3.1.</span> <span class="nav-text">让你放弃i的a</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#让你节省好几秒的A键（shift-a）"><span class="nav-number">3.2.</span> <span class="nav-text">让你节省好几秒的Ａ键（shift + a）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流畅的o键"><span class="nav-number">3.3.</span> <span class="nav-text">流畅的o键</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/images/t2.png" alt="ZJW">
-            
-              <p class="site-author-name" itemprop="name">ZJW</p>
-              <div class="site-description motion-element" itemprop="description"></div>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
-                    
-                      <a href="/categories/">
-                    
-                  
-                    
-                    
-                      
-                    
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">categories</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                    
-                      
-                    
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">tags</span>
-                  
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="ZJW"
+      src="/images/tusiji.jpg">
+  <p class="site-author-name" itemprop="name">ZJW</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="chat motion-element"><i class="fa fa-comment"></i>
+    Chat
+  </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yourname" title="GitHub → https://github.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://plus.google.com/yourname" title="Google → https://plus.google.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
+      </span>
+  </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
 
-            
-            
-            
-            
 
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#新手之坑"><span class="nav-number">1.</span> <span class="nav-text">新手之坑</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#各种文本编辑器学习曲线"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">各种文本编辑器学习曲线</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#欲练此功-必先"><span class="nav-number">2.</span> <span class="nav-text">欲练此功,必先</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#按键总结"><span class="nav-number">2.1.</span> <span class="nav-text">按键总结</span></a></li></ol></li></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
-
-      
+      </div>
 
     </div>
   </aside>
-  
+  <div id="sidebar-dimmer"></div>
 
 
-        
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love" id="animate">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">ZJW</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.5.0
+  </div>
 
-  
-
-  
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
 </div>
 
 
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
 
 
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.1.0</div>
-
-
-
-
-        
 
 
 
@@ -700,111 +449,18 @@
         
       </div>
     </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-    
-
-    
   </div>
 
   
-
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
-    
-    
-  
-  <script color="102,205,170" opacity="0.7" zindex="-2" count="133" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script color='102,205,170' opacity='0.7' zIndex='-2' count='177' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="/js/utils.js?v=7.1.0"></script>
-
-  <script src="/js/motion.js?v=7.1.0"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/affix.js?v=7.1.0"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.1.0"></script>
-
-
-
-  
-  <script src="/js/scrollspy.js?v=7.1.0"></script>
-<script src="/js/post-details.js?v=7.1.0"></script>
-
-
-
-  
-
-
-  <script src="/js/next-boot.js?v=7.1.0"></script>
-
-
-  
-
-  
-
-  
-
-  
-
-
-  
 
 
   
@@ -812,29 +468,17 @@
 
 
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
   
 
