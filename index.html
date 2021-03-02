@@ -194,7 +194,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-02-21 16:48:36 / Modified: 17:00:03" itemprop="dateCreated datePublished" datetime="2021-02-21T16:48:36+08:00">2021-02-21</time>
+              <time title="Created: 2021-02-21 16:48:36 / Modified: 17:00:54" itemprop="dateCreated datePublished" datetime="2021-02-21T16:48:36+08:00">2021-02-21</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -227,6 +227,7 @@
 <h2 id="确认是否添加root权限"><a href="#确认是否添加root权限" class="headerlink" title="确认是否添加root权限"></a>确认是否添加root权限</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">su - &lt;username&gt;</span><br><span class="line">grep <span class="string">&#x27;^sudo&#x27;</span> /etc/group</span><br></pre></td></tr></table></figure>
 
 <p>这时得到的输出为<br><code>sudo:x:27:&lt;username&gt;</code></p>
+<p>表示添加成功</p>
 
       
     </div>
@@ -358,7 +359,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-04 12:18:31" itemprop="dateModified" datetime="2021-02-04T12:18:31+08:00">2021-02-04</time>
+                <time title="Modified: 2021-03-02 19:37:37" itemprop="dateModified" datetime="2021-03-02T19:37:37+08:00">2021-03-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -385,6 +386,8 @@
 <p>-R 表示递归处理目录</p>
 <h3 id="添加到bash里开机启动这行命令"><a href="#添加到bash里开机启动这行命令" class="headerlink" title="添加到bash里开机启动这行命令"></a>添加到bash里开机启动这行命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup v2ray --config ***.config &gt;/dev/null 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure>
 <p><code>v2ray --config ***.config</code>这条命令表示运行v2ray<br><code>nohup</code>表示退出终端后这条命令不会被终止,仍然在后台运行.<br><code>&gt;/dev/null</code>表示将输出导至linux的”文件黑洞”,也就是删除输出的log.<br><code>2&gt;&amp;1</code>表示将错误输出2导至标准输出&amp;1.<br>最后的&amp;表示将该行命令在当前终端后台运行.</p>
+<h3 id="查看当前目录下有多少文件"><a href="#查看当前目录下有多少文件" class="headerlink" title="查看当前目录下有多少文件"></a>查看当前目录下有多少文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls /usr/bin | wc -l</span><br></pre></td></tr></table></figure>
+<p>上面这条命令表示查看/usr/bin/下有多少个可执行文件或者链接</p>
 
       
     </div>
